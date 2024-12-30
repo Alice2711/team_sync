@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeamSync - 실시간 협업 플랫폼</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+<!-- Move the login button here, outside the header -->
+<button class="login-btn" th:onclick="|location.href='@{/login}'|">로그인</button>
+
+<header>
+    <div>
+        <h1>실시간 협업 타임라인 플랫폼</h1>
+    </div>
+</header>
+
+<div class="container">
+    <h2>프로젝트 목록</h2>
+    <div class="project-card">
+        <div>
+            <h3>개발 한번 해봅시다 -  개발</h3>
+            <div class="info">
+                <p>진행률: 70%</p>
+                <p>담당자: </p>
+            </div>
+        </div>
+        <button class="btn" th:onclick="|location.href='@{/project/1}'|">프로젝트 열기</button>
+    </div>
+    <div class="project-card">
+        <div>
+            <h3>사이드 프로젝트 - 기획</h3>
+            <div class="info">
+                <p>진행률: 40%</p>
+                <p>담당자: </p>
+            </div>
+        </div>
+        <button class="btn" th:onclick="|location.href='@{/project/2}'|">프로젝트 열기</button>
+    </div>
+    <div class="create-project-btn">
+        <button class="btn" style="margin-top: 20px;" th:onclick="|location.href='@{/project/new}'|"> (+) 프로젝트 생성</button>
+    </div>
+</div>
+
+<footer>
+    <div class="footer-content">
+        <p>
+            실시간 협업 플랫폼
+        </p>
+    </div>
+    <p>&copy; 2024 TeamSync. All rights reserved.</p>
+</footer>
+
+
+<script th:src="@{/js/scripts.js}"></script>
+</body>
+</html>

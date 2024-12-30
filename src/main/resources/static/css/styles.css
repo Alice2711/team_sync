@@ -1,0 +1,134 @@
+body {
+    font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9; /* 파스텔 톤 배경색 */
+    color: #333;
+}
+
+header {
+    background-color: #ffb3b3; /* 연한 핑크색 */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.project-card h3 {
+    margin-top: 5px;  /* 기존 여백을 줄여서 텍스트가 위로 더 가까워짐 */
+}
+
+h1, p {
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff; /* 하얀색 배경 */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.project-card {
+    background-color: #e0f7fa; /* 연한 파란색 배경 */
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #b2ebf2;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex; /* 버튼을 오른쪽에 정렬하기 위해 flexbox 사용 */
+    justify-content: space-between; /* 내용과 버튼을 양쪽 끝으로 정렬 */
+    align-items: center; /* 세로 중앙 정렬 */
+}
+
+.info {
+    display: flex;
+    gap: 20px; /* 진행률과 담당자 간 간격 설정 */
+}
+
+.info p {
+    margin: 0; /* 기본 여백 없애기 */
+}
+
+
+/* 프로젝트 생성 버튼을 오른쪽에 정렬 */
+.create-project-btn {
+    display: flex;
+    justify-content: flex-end; /* 오른쪽 정렬 */
+    margin-top: 20px;
+}
+
+
+button {
+    background-color: #007aff; /* 연보라색 */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+    margin-left: auto; /* 오른쪽으로 정렬 */
+}
+
+button:hover {
+    background-color: #5ac8fa;
+}
+
+button:active {
+    background-color: #0051cc;
+}
+
+/* Updated login button style */
+.login-btn {
+    background-color: white;
+    color: #333;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 12px;
+    position: absolute; /* Make it absolute */
+    top: 0; /* Place it at the very top */
+    right: 20px; /* Align it to the right */
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.login-btn:hover {
+    background-color: #f0f0f0;
+}
+
+footer {
+    background-color: #cccccc; /* 다크 배경 */
+    color: #f9f9f9; /* 흰색 텍스트 */
+    text-align: center; /* 가운데 정렬 */
+    padding: 20px 0; /* 위아래 여백 */
+    position: relative;
+    bottom: 0; /* 페이지 하단 */
+    width: 100%;
+    font-size: 14px;
+}
+
+.footer-content {
+    max-width: 1200px; /* 최대 너비 제한 */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-links {
+    margin-top: 10px;
+}
+
+.footer-link {
+    color: #5ac8fa; /* 아이폰 하늘색 */
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}

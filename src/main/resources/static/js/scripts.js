@@ -1,7 +1,3 @@
-function redirectToLogin() {
-    window.location.href = '/login';
-}
-
 function openProject(projectId) {
     window.location.href = `/project/${projectId}`;
 }

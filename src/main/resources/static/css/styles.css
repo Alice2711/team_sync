@@ -82,24 +82,29 @@ button:active {
     background-color: #0051cc;
 }
 
-/* Updated login button style */
-.login-btn {
-    background-color: white;
-    color: #333;
-    padding: 5px 15px;
-    border-radius: 5px;
+.auth-buttons {
+    position: absolute; /* 부모 요소 기준 위치 설정 */
+    top: 10px; /* 헤더 상단에서 10px */
+    right: 10px; /* 헤더 오른쪽에서 10px */
+    display: flex; /* 버튼 정렬 */
+    gap: 10px; /* 버튼 간격 */
+}
+
+.login-btn, .signup-btn {
+    background-color: white; /* 버튼 배경색 흰색 */
+    color: #333; /* 텍스트 색상 */
+    padding: 10px 20px;
+    border-radius: 5px; /* 모서리 둥글게 */
     cursor: pointer;
     font-weight: bold;
-    font-size: 12px;
-    position: absolute; /* Make it absolute */
-    top: 0; /* Place it at the very top */
-    right: 20px; /* Align it to the right */
+    font-size: 14px;
     transition: background-color 0.3s, border-color 0.3s;
 }
 
-.login-btn:hover {
-    background-color: #f0f0f0;
+.login-btn:hover, .signup-btn:hover {
+    background-color: #f0f0f0; /* 호버 시 연회색 */
 }
+
 
 footer {
     background-color: #cccccc; /* 다크 배경 */
